@@ -18,11 +18,9 @@ html {
 }
 
 body {
-  background: radial-gradient(
-      circle at top,
+  background: radial-gradient(circle at top,
       rgba(72, 230, 193, 0.98),
-      rgba(92, 122, 230, 0.87)
-    ),
+      rgba(92, 122, 230, 0.87)),
     url('bg-pattern-dark.png');
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
@@ -75,20 +73,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #6782e4de;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #6782e4de;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: #6782e4de;;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -97,7 +95,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #5674e3de;;
 }
 
 .player {
@@ -111,7 +109,7 @@ h1 {
   display: inline-block;
   width: 10rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #6782e4de;;
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -135,7 +133,7 @@ h1 {
 .player-symbol {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #6782e4de;;
 }
 
 ol {
@@ -151,7 +149,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #6782e4de;;
   border: none;
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
@@ -182,8 +180,8 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  background: #88a4ac;
+  color: #00323f;
   font-size: 5rem;
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
@@ -208,7 +206,7 @@ ol {
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #6782e4de;;
   margin: 0;
 }
 
@@ -223,8 +221,8 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #6782e4de;;
+  color: #6782e4de;;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -233,10 +231,10 @@ ol {
 }
 
 #game-over button:hover {
-  background: #fcd256;
+  background: #6782e4de;;
   color: #3f3b00;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 17, 255, 0.8);
 }
 
 #log {
@@ -290,6 +288,7 @@ ol {
     opacity: 0;
     transform: translateX(-30%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -300,9 +299,11 @@ ol {
   0% {
     color: #e1dec7;
   }
+
   50% {
     color: #9f9d83;
   }
+
   100% {
     color: #e1dec7;
   }
@@ -312,9 +313,11 @@ ol {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -322,15 +325,17 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
+    border-color: #6782e4de;;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
   }
+
   50% {
-    border-color: #f8c031;
+    border-color: #5f78d1de;
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
+
   100% {
-    border-color: #f6e35a;
+    border-color: #576dbede;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
 }
@@ -341,10 +346,12 @@ ol {
     transform: scale(0);
     opacity: 0;
   }
+
   80% {
     transform: scale(1.1);
     opacity: 1;
   }
+
   100% {
     transform: scale(1);
   }
