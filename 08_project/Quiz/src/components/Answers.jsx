@@ -15,7 +15,7 @@ export default function Answers({
 
   return (
     <ul id="answers">
-      {shuffleAnswers.map((answer) => {
+      {shuffleAnswers.current.map((answer) => {
         const isSelected = selectedAnswer === answer;
         let cssClass = "";
 
